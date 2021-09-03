@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sam Wilson"
+		]
+	},
+	"timezoneconverter-desc": "{{desc|name=TimezoneConverter|url=https://www.mediawiki.org/wiki/Extension:TimezoneConverter}}",
+	"timezoneconverter-invalid-format": "Error message shown when an invalid date format name is used.\n\nParameters:\n* $1 — the format name\n* $2 — list of valid format names"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sam Wilson"
+		]
+	},
+	"timezoneconverter-desc": "Display dates and times in users' local timezones.",
+	"timezoneconverter-invalid-format": "Invalid date format '$1'. Valid formats are: $2"
+}

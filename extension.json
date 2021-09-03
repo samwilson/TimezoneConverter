@@ -1,0 +1,78 @@
+{
+	"name": "TimezoneConverter",
+	"version": "0.1.0",
+	"author": [
+		"[https://samwilson.id.au/ Sam Wilson]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:TimezoneConverter",
+	"descriptionmsg": "timezoneconverter-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.36"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TimezoneConverter\\": "src/"
+	},
+	"HookHandlers": {
+		"hooks": {
+			"class": "MediaWiki\\Extension\\TimezoneConverter\\Hooks"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "hooks"
+	},
+	"MessagesDirs": {
+		"TimezoneConverter": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"TimezoneConverterMagic": "TimezoneConverter.i18n.magic.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "TimezoneConverter/resources"
+	},
+	"config": {
+		"TimezoneConverterFormats": {
+			"value": {
+				"time": {
+					"php": "g:iA",
+					"js": { "timeZoneName": "short", "hour": "numeric", "minute": "numeric" }
+				},
+				"exact":  {
+					"php": "Y F j (l), g:iA",
+					"js": { "timeZoneName": "short", "year": "numeric", "month": "numeric", "day": "numeric", "hour": "numeric", "minute": "numeric" }
+				},
+				"day": {
+					"php": "Y F j (l)",
+					"js": { "timeZoneName": "short", "year": "numeric", "month": "numeric", "day": "numeric" }
+				},
+				"month": {
+					"php": "Y F",
+					"js": { "year": "numeric", "month": "numeric" }
+				},
+				"year": {
+					"php": "Y",
+					"js": { "year": "numeric" }
+				},
+				"circa": {
+					"php": "\\c. Y",
+					"js": { "year": "numeric" }
+				}
+			}
+		}
+	},
+	"ResourceModules": {
+		"ext.TimezoneConverter": {
+			"dependencies": [],
+			"messages": [],
+			"styles": [],
+			"scripts": [
+				"ext.timezoneConverter.js"
+			]
+		}
+	},
+	"manifest_version": 2
+}
