@@ -41,7 +41,7 @@
 					"php": "g:iA",
 					"js": { "timeZoneName": "short", "hour": "numeric", "minute": "numeric" }
 				},
-				"exact":  {
+				"exact": {
 					"php": "Y F j (l), g:iA",
 					"js": { "timeZoneName": "short", "year": "numeric", "month": "numeric", "day": "numeric", "hour": "numeric", "minute": "numeric" }
 				},
