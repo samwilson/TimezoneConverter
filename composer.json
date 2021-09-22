@@ -1,4 +1,9 @@
 {
+	"name": "samwilson/timezone-converter",
+	"description": "A small MediaWiki extension for making times in wiki pages display correctly for everyone.",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:TimezoneConverter",
+	"type": "mediawiki-extension",
+	"license": "GPL-3.0-or-later",
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "37.0.0",
 		"mediawiki/minus-x": "1.1.1",
@@ -7,6 +12,7 @@
 	},
 	"scripts": {
 		"test": [
+			"composer validate",
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"phpcs -p -s",
 			"minus-x check ."

@@ -27,7 +27,10 @@ class HooksTest extends MediaWikiUnitTestCase {
 			],
 			"exact" => [
 				"php" => "Y F j (l), g:iA",
-				"js" => [ "timeZoneName"=> "short", "year"=> "numeric", "month"=> "numeric", "day"=> "numeric", "hour"=> "numeric", "minute"=> "numeric" ],
+				"js" => [
+					"timeZoneName" => "short", "year" => "numeric",
+					"month" => "numeric", "day" => "numeric", "hour" => "numeric", "minute" => "numeric"
+				],
 			],
 			"day" => [
 				"php" => "Y F j (l)",

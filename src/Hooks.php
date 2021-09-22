@@ -41,6 +41,11 @@ class Hooks implements ParserFirstCallInitHook {
 		return $this->getOutput( $args, $formats );
 	}
 
+	/**
+	 * @param string[] $args
+	 * @param string[] $formats
+	 * @return mixed
+	 */
 	public function getOutput( $args, $formats ) {
 		$datetime = new DateTime( $args['datetime'], new DateTimeZone( 'Z' ) );
 		$datetime->setTimezone( new DateTimeZone( 'Z' ) );
