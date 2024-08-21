@@ -25,7 +25,7 @@ class Hooks implements ParserFirstCallInitHook {
 	 * @return mixed[]
 	 */
 	public function render( Parser $parser ) {
-		$parser->getOutput()->addModules( 'ext.TimezoneConverter' );
+		$parser->getOutput()->addModules( [ 'ext.TimezoneConverter' ] );
 		$config = MediaWikiServices::getInstance()->getMainConfig();
 
 		$args = [
