@@ -4,8 +4,8 @@ namespace MediaWiki\Extension\TimezoneConverter;
 
 use DateTime;
 use DateTimeZone;
-use Html;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use Message;
 use Parser;
